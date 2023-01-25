@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .errmsg{
+            color:red;
+           
+        }
+    </style>
+   
+</head>
+<body>
+    <form>
+        
+        <input type="password" onkeyup="fun(this)"><br/>
+        <div id="u" class="errmsg">upper case</div>
+        <div id="l" class="errmsg">lowercase</div>
+        <div id="d" class="errmsg">digit</div>
+        <div id="s" class="errmsg">splsym</div>
+        <div id="le" class="errmsg">length>8</div>
+
+        <input type="submit"/>
+    </form>
+    <script>
+        function fun(e)
+        {
+            let d=document.getElementsByTagName("div")
+            for(let i=0;i<d.length;i++)
+            {
+                d[i].style.color="red"
+            }
+            s=e.value
+            if(/[A-Z]/.test(s))
+            {
+                let ref=document.getElementById("u")
+                ref.style.color="green"
+                
+            }
+            if(/[a-z]/.test(s))
+            {
+                let ref=document.getElementById("l")
+                ref.style.color="green"
+                
+            }
+            if(/[0-9]/.test(s))
+            {
+                let ref=document.getElementById("d")
+                ref.style.color="green"
+                
+            }
+            if(/[!@#$%^&*()]/.test(s))
+            {
+                let ref=document.getElementById("s")
+                ref.style.color="green"
+                
+            }
+            if(e.value.length>8)
+            {
+                let ref=document.getElementById("le")
+                ref.style.color="green"
+                
+            }
+           
+        }
+    </script>
+    
+</body>
+</html>

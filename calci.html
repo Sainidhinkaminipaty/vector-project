@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <style>
+            body{
+                position:absolute ;
+                width:100%;
+                height:90vh;
+                background:linear-gradient(to right,rgba(220,210,170,0.3),rgba(250,220,190,0.3)),url("train2.jpg");
+                background-size: cover;
+            }
+            .c1{
+                position: relative;
+                width:30%;
+                height:40vh;
+                background:linear-gradient(rgba(210,190,180,0.4),rgba(180,170,160,0.4)),url("brown-wood-texture-background-600w-1916740031.webp");
+                background-size: cover;
+                left:30%;
+                top:30vh;
+
+            }
+            .x{
+                position: relative;
+                width:60%;
+                height:4vh;
+                top:30px;
+                left:50px;
+                margin-top: 20px;
+            }
+            .y{
+                position:absolute;
+                width: 80%;
+                height:5vh;
+                top:30vh;
+                left:50px;
+                display:flex;
+                justify-content: space-around;
+             }
+             .z{
+                width:50px;
+                height:50px;
+             }
+        </style>
+
+    </head>
+    <body>
+        <div class="c1">
+            <input class="x" type="text" value="" id="1">
+            <input class="x" type="text" value="" id="2">
+            <input class="x" type="text" value="" id="3">
+            <div class="y">
+            <div><button onclick="add()" class="z">+</button></div>
+            <div><button onclick="sub()" class="z">-</button></div>
+            <div><button onclick="div()" class="z">/</button></div>
+            <div><button onclick="mul()" class="z">*</button></div>
+            <div><button onclick="pow()" class="z">**</button></div>
+            <div><button onclick="can()" class="z">can</button></div>
+        </div>
+        <script>
+        function add(){
+            a=document.getElementById("1")
+            b=document.getElementById("2")
+            let m=parseInt(a.value)
+            let n=parseInt(b.value)
+            c=m+n
+            document.getElementById("3").value=""+c
+        }
+        function sub(){
+            a=document.getElementById("1")
+            b=document.getElementById("2")
+            let m=parseInt(a.value)
+            let n=parseInt(b.value)
+            c=m-n
+            document.getElementById("3").value=""+c
+        }
+        function div(){
+            a=document.getElementById("1")
+            b=document.getElementById("2")
+            let m=parseInt(a.value)
+            let n=parseInt(b.value)
+            c=m/n
+            document.getElementById("3").value=""+c
+        }
+        function mul(){
+            a=document.getElementById("1")
+            b=document.getElementById("2")
+            let m=parseInt(a.value)
+            let n=parseInt(b.value)
+            c=m*n
+            document.getElementById("3").value=""+c
+        }
+        function pow(){
+            a=document.getElementById("1")
+            b=document.getElementById("2")
+            let m=parseInt(a.value)
+            let n=parseInt(b.value)
+            c=m**n
+            document.getElementById("3").value=""+c
+        }
+        function can(){
+            c=0
+            document.getElementById("3").value=""+c
+            document.getElementById("2").value=""+c
+            document.getElementById("1").value=""+c
+        }
+        </script>
+        
+     </div>
+    </body>
+    
+</html>

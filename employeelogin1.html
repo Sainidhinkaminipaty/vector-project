@@ -1,0 +1,199 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    <style>
+          *{
+                margin:0px;
+                text-decoration:none;
+            }
+        .c1{
+            position:absolute;
+            height:15vh;
+            width:100%;
+            background-color: skyblue;
+            
+        }
+        .c2{
+            position:relative;
+            height:85vh;
+            width:10%;
+            background-color:lightpink;
+            top:15vh;
+        }
+        .c3{
+            position: absolute;
+            height:85vh;
+            width:90%;
+            background-image:url("employeelogin.jpg");
+            background-size:cover;
+            top:15vh;
+            left:10%;
+        }
+        
+
+        .c4{
+            width:10%;
+            height:15vh;
+            position:absolute;
+            top:0px;
+            left:0px;
+        }
+        .c5{
+            width:80%;
+            height:15vh;
+            position:absolute;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            left:20%;
+
+        }
+       
+        .x{
+            width:125px;
+            height:30px;
+            border-radius:10px;
+            margin-top: 50px;
+            font-size: large;
+            background-color:lightgreen;
+        }
+       .c6{
+            width: 35%;
+            height: 40vh;
+            position: relative;
+            background:linear-gradient(rgba(225,225,215,0.6),rgba(180,180,205,0.6));
+            left:30%;
+            top:25vh;
+
+        }
+       .c7{
+            position: relative;
+            width:80%;
+            left:15%;
+            top:3vh;
+        }
+        .t,.z{
+            position: relative;
+            width:200px;
+            height:30px;
+            margin-top: 10px;
+            background: transparent;
+            border-color: black;
+
+        }
+        .p{
+            position: relative;
+            width:250px;
+            height:40px;
+            background-color:green;
+            color: white;
+            margin-top: 10px;
+        }
+        .c8{
+            position: relative;
+            width:100%;
+            height:90vh;
+            background-color:chocolate;
+            top:30vh;
+        }
+        .s{
+            position: relative;
+            left:-30px;
+        }
+        .x2 {
+            display: inline-block;
+            position: relative;
+        }
+    
+        .x2:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color:blueviolet;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .x2:hover:after{
+            position: relative;
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        
+        }
+        .x2:hover{
+             text-decoration: underline solid blueviolet 2px;
+        
+        }
+
+
+
+
+
+
+   </style>
+<head>
+<body>
+<div class="c1">
+        <div><a href="1stwebpage.html" target="_blank"><img class="c4" src="logotrain.jpg"></a></div>
+        <div class="c5">
+        <div class="x2">Book meals</div>
+        <div class="x2">Tourism</div>
+        <div class="x2"><a href="railway map.html">Trains Availability& Reservations</a></div>
+        <div class="X2">Station services</div>
+        <div class="x2">Counter Ticket cancellation</div>
+        <div class="x2">Employee login?</div>
+        </div>
+
+        
+    </div>
+    <div class="c2">
+        <div><input class="x" type="button" value="Flights"></div>
+        <div><input class="x" type="button" value="Buses"></div>
+        <div><input class="x" type="button" value="Taxi"></div>
+        <div><input class="x" type="button" value="Hotels"></div>
+        <div><input class="x" type="button" value="Food delivery"></div>
+    </div>
+    <div class="c3">
+        <div class="c6">
+            <div class="c7">
+                
+               <div><input class="z" type="text" placeholder="Enter employee id"></div>
+                <div><input class="z" type="password" placeholder="Enter password" id="password">
+                    <i class="s bi bi-eye-slash" id="togglePassword"></i>
+                    
+                
+                </div>
+                <div><input class="z" type="button" value="Log In"></div>
+                <div class="t">Forgotten password?</div>
+                <hr>
+                <div><a href="employeelogin.html" target="_blank"><input class="p" type="button" value="Create New Account"></a></div>
+                </div>
+            </div>
+      </div>
+</body> 
+<script>
+    const togglePassword = document.querySelector("#togglePassword");
+    const password = document.querySelector("#password");
+
+    togglePassword.addEventListener("click", function () {
+        // toggle the type attribute
+        const type = password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+        
+        // toggle the icon
+        this.classList.toggle("bi-eye");
+    });
+
+    // prevent form submit
+    const form = document.querySelector("form");
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+    });
+</script>
+</html>

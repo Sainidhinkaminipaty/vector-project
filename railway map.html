@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+        }
+        .c1{
+            position:absolute;
+            height:15vh;
+            width:100%;
+            background-color:silver;
+            
+        }
+        .c2{
+            position:relative;
+            height:85vh;
+            width:10%;
+            background-color:lightgray;
+            top:15vh;
+        }
+        .c3{
+            position: absolute;
+            height:85vh;
+            width:90%;
+            background-image:url("tenor.gif");
+            background-size:cover;
+            top:15vh;
+            left:10%;
+        }
+        
+
+        .c4{
+            width:10%;
+            height:15vh;
+            position:absolute;
+            top:0px;
+            left:0px;
+        }
+        .c5{
+            width:80%;
+            height:15vh;
+            position:absolute;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            left:20%;
+
+        }
+        .x{
+            width:125px;
+            height:30px;
+            border-radius:10px;
+            margin-top: 50px;
+            font-size: large;
+            background-color:lightgreen;
+        }
+
+       
+        .c6{
+            position:absolute;
+            width:30%;
+            height:45vh;
+            right:2%;
+            top:20vh;
+
+        }
+        .c7{
+            position: relative;
+            width: 40%;
+            height:40vh;
+            background:linear-gradient(rgba(250, 200,220, 0.6),rgba(220,210,215,0.6));
+            top:20vh;
+            left:10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .t{
+            position:relative;
+            width:35%;
+            height:5vh;
+            margin-left: 10px;
+            margin-top: 20px;
+            background: transparent;
+            border-color: black;
+            text-align: center;
+        }
+        .p{
+            position:absolute;
+            top:7vh;
+            left:60%;
+
+        }
+        .s1{
+            position:absolute;
+            top:7vh;
+            left:11%;
+
+        }
+        .butt{
+            position: relative;
+            width:40%;
+            height:4vh;
+            background-color:green;
+            left:20%;
+        }
+        .c8{
+            position:relative;
+            width:100%;
+            height:90vh;
+            top:15vh;
+            background-color:white;
+        }
+    h1{
+        text-align: center;
+        position: relative;
+        top:10vh;
+    }
+    
+    .c10{
+        position: relative;
+        width:100%;
+        height:40vh;
+        top:10vh;
+        display: flex;
+
+    }
+    .c9{
+        position: relative;
+        width:60%;
+        height:50vh;
+        left:60%;
+        top:5vh;
+
+    }
+    .c11{
+        position: relative;
+        width:50%;
+        left:3%;
+    }
+    .c12{
+        position:absolute;
+        width:40%;
+        left:50%;
+        }
+    .c13{
+        text-align: justify;
+    }
+    .d1{
+        position: relative;
+        width:100%;
+        height:90vh;
+        top:4vh;
+    }
+    .d3{
+        position: relative;
+        width:20%;
+        height:30vh;
+        top:2vh;
+        left:1%;
+
+    }
+    .d4{
+        width:100%;
+        height:30vh;
+    }
+    .d2{
+        display: flex;
+        justify-content: space-around;
+    }
+    .d1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .d4:hover{
+        width:130%;
+        height:35vh;
+    }
+    .c16{
+            position: relative;
+            width:100%;
+            height:50vh;
+            background-color: black;
+            top:40vh;
+            color: white;
+        }
+       .c17{
+        position: relative;
+        width:100%;
+        height:5vh;
+        background-color: chocolate;
+        }
+        .c18{
+            position: relative;
+            width:50%;
+            left:20%;
+            top:1vh;
+            
+        }
+        .c19{
+            position: relative;
+            width:30%;
+            left:60%;
+            display: flex;
+            justify-content: space-around;
+            top:-3vh;
+            font-size: 22px;
+        }
+       .y3{
+        position: relative;
+        color:red ;
+
+       }
+       .y2{
+        position: relative;
+        color:green ;
+
+       }
+       .y1{
+        position: relative;
+        color:purple ;
+
+       }
+       .l{
+        position: relative;
+        color:skyblue;
+
+       }
+       .c20{
+        position: relative;
+        width:30%;
+        height:30vh;
+        top:2vh;
+        left:4%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+       }
+       .c21{
+        position: relative;
+        width:95%;
+        height: 30vh;
+        display: flex;
+       }
+        .c22{
+            position: relative;
+            width:100%;
+            height:10vh;
+            background-color: white;
+            top:5vh;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .c23{
+            position: relative;
+            top:5vh;
+            height:10vh;
+        }
+        .c24{
+            position: relative;
+            color: black;
+            top:2vh;
+
+        }
+        .x2 {
+            display: inline-block;
+            position: relative;
+        }
+    
+        .x2:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color:blueviolet;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .x2:hover:after{
+            position: relative;
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        
+        }
+        .x2:hover{
+             text-decoration: underline solid blueviolet 2px;
+        
+        }
+       
+        .x:hover{
+            background-color: skyblue;
+            color: white;
+        }
+        .t26{
+            position: relative;
+            top:-1vh;
+        }
+        .t25{
+            position: relative;
+            height: 100vh;
+            width:100%;
+            top:15vh;
+            border:none;
+            background-color: black;
+
+        }
+        .t50{
+            position: relative;
+            height:100vh;
+            top:30vh;
+
+        }
+        .t27{
+            position: relative;
+            width:100%;
+            text-align: center;
+            top:10vh;
+        }
+        .r:hover{
+                position: relative;
+                color:lightgreen;
+                }
+        i{
+            transition: width 1s, height 1s, transform 1s;
+           }
+
+        i:hover {
+            transform: rotate(180deg);
+           }
+           .t51{
+            position: relative;
+            top:-10vh;
+           }
+           .t52{
+            position: relative;
+            margin-bottom: 3vh;
+            margin-top:2vh;
+            width:90%;
+            left:5%;
+           }
+           .t53{
+            position: relative;
+            margin-bottom:3vh;
+            width:90%;
+            text-align: justify;
+            left:5%;
+           }
+           .t53:hover{
+            color:blue;
+           }
+           .t52:hover{
+            color: red;
+           }
+           .accordion {
+            position: relative;
+           background-color:aliceblue;
+           color: #444;
+           cursor: pointer;
+           padding: 18px;
+           width: 80%;
+           height:1vh;
+           border: none;
+           text-align:left;
+           outline: none;
+           font-size: 15px;
+           transition: 0.4s;
+           border:2px solid black;
+           left:5%;
+          }
+
+          .active, .accordion:hover {
+         background-color: #ccc; 
+         }
+
+          .panel {
+          position: relative;
+          width:75%;
+          padding: 0 18px;
+          display: none;
+          background-color: white;
+          overflow: hidden;
+          left:5%;
+          }
+          .t60{
+            position: relative;
+            top:50vh;
+            height:50vh;
+          }
+          .r60{
+            position: relative;
+            width:5%;
+            z-index:4;
+            left:88%;
+          }
+          .r61{
+            border-top: 1px solid black;
+          }
+          .t100{
+            position: relative;
+            width:90%;
+            left:60px;
+          }
+          
+        
+           
+    </style>
+</head>
+<body>
+    <div class="c1">
+        <div><a href="1stwebpage.html" target="_blank"><img class="c4" src="trainearth.jpg"></a></div>
+        <div class="c5">
+        <div class="x2">Book meals</div>
+        <div class="x2">Tourism</div>
+        <div class="x2">Trains Availability & Reservations</div>
+        <div class="x2">Station services</div>
+        <div class="x2">Counter Ticket cancellation</div>
+        <div class="x2">Employee login?</div>
+        </div>
+
+        
+    </div>
+    <div class="c2">
+        <div><input class="x" type="button" value="Flights"></div>
+        <div><input class="x" type="button" value="Buses"></div>
+        <div><input class="x" type="button" value="Taxi"></div>
+        <div><input class="x" type="button" value="Hotels"></div>
+        <div><input class="x" type="button" value="Food delivery"></div>
+    </div>
+    <div class="c3">
+        <div><img class="c6" src="railwaymap.jpg"></div>
+        <div class="c7">
+         <div><pre><b>From</b><input class="t" type="text" value="" placeholder="Enter your location">   <b>to</b><input class="t" type="text" value="" placeholder="Enter desatination"></pre></div>
+         <div><pre><b>Date</b> <input type="date" value="" placeholder="Enter train name(optional)"></pre>
+            <i class="p fa-solid fa-location-dot"></i>
+            <i class="s1 fa-solid fa-location-arrow"></i></div>
+         <div>Seat availability <select>
+            
+            <option value="">All classes</option>
+            <option value="">Anubhuti class(EA)</option>
+            <option value="">Ac first class(1A)</option>
+            <option value="">Vistadome Ac(EV)</option>
+            <option value="">Exec chair car(EC)</option>
+            <option value="">Ac tier 2A(2A)</option>
+            <option value="">Ac tier 3A(3A)</option>
+            <option value="">AC chair car(CC)</option>
+            <option value="">Sleeper(s)</option>
+        </select></div>
+         <div>Speciality <select>
+            <option value="">General</option>
+            <option value="">Ladies</option>
+            <option value="">senior citizen</option>
+            <option value="">Person with disability</option>
+            <option value="">Tatkal</option>
+            <option value="">Premium tatkal</option>
+        </select></div>
+        <div><input class="butt" type="button" value="search"></div>
+        </div>
+    </div>
+    <div class="c8">
+        <div><h1>Information regarding the train availabilities</h1></div>
+        <div class="c10">
+        <div class="c11"><h1 class="c13">In most of the cases railway department tries its best to provide services to the customers but in some cases there may be unexpected issues or natural calamities by which trains be delayed or cancelled.We regret for such issues and try to improve the facilites properly.In case of any issue kindly mail us to railway.issue@gmail.com</h1></div>
+        <div class="c12"><img class="c9" src="tk.jpg"></div>
+    </div>
+</div>
+<div class="d1">
+    <h1 class="t26">Best tourism spots captured</h1>
+    <div class="d2">
+        <div class="d3"><img class="d4" src="set1.jpg"></div>
+        <div class="d3"><img class="d4" src="set2.jpg"></div>
+        <div class="d3"><img class="d4" src="set3.jpg"></div>
+
+    </div>
+    <div class="d2">
+        <div class="d3"><img class="d4" src="set4.jpg"></div>
+        <div class="d3"><img class="d4" src="set5.jpg"></div>
+        <div class="d3"><img class="d4" src="set6.jpg"></div>
+
+    </div>
+
+</div>
+<div><h1 class="t27">How to book online tickets?</h1>
+    <video controls autoplay muted class="t25">
+        <source class="t25" src="how_to_book_train_ticket_in_phonepe_telugu,phonepe_train_ticket_booking(360p).mp4" type="video/mp4">
+        
+      </video>
+    
+</div>
+<div class="t50">
+<div><h1 class="t51">Important information regarding train reservations</h1></div>
+<hr class="t100">
+<h2 class="t52">IRCTC</h2>
+<p class="t53">A renovated face of train travel of modern India is IRCTC (Indian Railways Catering and Tourism Corporation). IRCTC is a platform where you primarily book your train tickets online apart from planning your holidays, order meals, and book train tourism packages. IRCTC leads in online train ticket bookings and also provides I-tickets which are nothing but regular tickets, which are booked online and delivered to your doorstep via post. IRCTC is listed as one of the busiest websites. Apart from online train ticket booking it hosts 24*7 support that address issues related to train schedules, train routes, train ticketing, train fares and seat availability. One can also check the PNR status, view ticket, print or cancel tickets on the website. The Indian Railways website generates lakhs of bookings per day, it began with IRCTC deciding to cut down on agent dependency, stress of queuing up at the railway counter etc. With the launch of IRCTC online train ticket booking people get the luxurious time to browse for various trains for their journey, understand the arrival and departure stations of the train they wish to travel, plan their budget and then book their train ticket accordingly.
+
+IRCTC train ticket booking lets the travelers get a confirmed berth in the desired class of a train. Furthermore as an ease to travelers a unique PNR (Passenger Name Record) is generated for every ticket that is booked. Using this PNR number a user can check on the status of the train ticket online on IRCTCfrom the comfort of their homes.
+
+IRCTC train ticket booking lets the travelers get a confirmed berth in the desired class of a train. Furthermore as an ease to travelers a unique PNR (Passenger Name Record) is generated for every ticket that is booked. Using this PNR number a user can check on the status of the train ticket online on IRCTC from the comfort of their homes.</p>
+<hr class="t100">
+<h2 class="t52">IRCTC seat availability and IRCTC Train Ticket</h2>
+<p class="t53">Train travel is now more sort for travel option thanks to IRCTC’s online train ticket booking. Getting a train ticket and IRCTC seat availability is hassle free, simple and secure on ConfirmTkt. A user gets two modes to book online train ticket, i-tickets and e-tickets. E-tickets are nothing but online copy of a train ticket which a user will have to take a print out of. E-tickets are also sent via mail to an e-mail id & as a message to the registered mobile number. This makes your travel smart as one need not to carry a soft copy. I-tickets on the other hand are like regular train tickets that are also booked online and same are delivered to the postal address provided within 3 working days. This service is currently active only in a few cities. When a user travels with e-tickets he/she is required to show a photo identity issued by the government. There are two ways to book IRCTC train tickets: One over the counter at a railway station and the other online.</p>
+<hr class="t100">
+<h2 class="t52">IRCTC Train Ticket Reservation</h2>
+<p class="t53">Various categories for IRCTC train ticket booking are also made available online for users. Journey date on a general booking can be preponed or postponed for Confirmed/RAC/Waitlisted train tickets. This change can be done for the same class train ticket or for a higher class train ticket with extra charges and also the change of journey date can be done just once. For people who intend to book their IRCTC train tickets in short notice of time can opt for the Railways Tatkal (Emergency) Scheme. Here the passenger can book their train tickets only 24 hours before the departure of the train they wish to travel in. This Tatkal train ticket reservation facility is available for all trains including any special trains. The train tickets under Tatkal reservation scheme are issued on first-come first-serve basis. The IRCTC Tatkal ticket booking window for AC coaches starts at 10 am 24 hours before the journey date, and for sleeper coach ticket bookings at 11 am. To facilitate comfortable train ticket booking for women passengers IRCTC introduced “Ladies Quota” where concessions on train ticket price are provided to women who either travel alone or a child below the age of 3 years. Apart from these schemes IRCTC has discounted tickets for students, differently abled and senior citizens.</p>
+</div>
+<div class="t60">
+<button class="accordion">Section 1 <i class="r60 fa-solid fa-angle-down"></i></button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="r61 accordion">Section 2 <i class="r60 fa-solid fa-angle-down"></i></button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  
+</div>
+
+
+<button class="r61 accordion">Section 3  <i class="r60 fa-solid fa-angle-down"></i></button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  
+</div>
+</div>
+
+<div class="c16">
+    <div class="c17">
+        <div><h2 class="c18 r">Get connected with us on our social network</h2></div>
+        <div class="c19">
+           <i class="y1 fa-brands fa-facebook"></i>
+           <i class="y1 fa-brands fa-square-instagram"></i>
+           <i class="y2 fa-brands fa-square-whatsapp"></i>
+           <i class="y3 fa-brands fa-youtube"></i>
+           <i class="l fa-brands fa-twitter"></i>
+           <i class="l fa-brands fa-telegram"></i>
+       </div>
+       <div class="c21">
+       <div class="c20">
+           <div class="r">IRCTC Trains</div>
+           <div class="r">General Information</div>
+           <div class="r">Important Information</div>
+           <div class="r">Agents</div>
+           <div class="r">Enquires</div>
+       </div>
+       <div class="c20">
+           <div class="r">How To</div>
+           <div class="r">IRCTC official app</div>
+           <div class="r">Advertise with us</div>
+           <div class="r">Refund Rules</div>
+           <div class="r">Person with disability facilities</div>
+       </div>
+       <div class="c20">
+           <div class="r">IRCTC eWallet</div>
+           <div class="r">IRCTC loyalty program</div>
+           <div class="r">IRCTC payment gateway</div>
+           <div class="r">IRCTC zone</div>
+           
+       </div>
+       <div class="c20">
+           <div class="r">For Newly Migrated Agents</div>
+           <div class="r">Mobile Zone</div>
+           <div class="r">Policies</div>
+           <div class="r">Ask Diksha bot</div>
+           <div class="r">About us</div>
+       </div>
+       </div>
+     
+    <div class="c22">
+       <div><img class="c23" src="Screenshot 2023-01-12 184555.png"></div>
+       <div><pre class="c24">Copyright Â© 2023 - www.irctc.co.in. All Rights Reserved 
+                                 
+                        Designed and Hosted by CRIS
+            
+                                Compatible Browsers</pre></div>
+    </div>
+
+</body>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</html>

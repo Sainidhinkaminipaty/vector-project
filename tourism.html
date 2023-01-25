@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="css/style.css" />
+  <style>
+            *{
+                margin:0px;
+                text-decoration:none;
+            }
+        .c1{
+            position:absolute;
+            height:15vh;
+            width:100%;
+            background-color:silver;
+            
+        }
+        .c2{
+            position:relative;
+            height:85vh;
+            width:10%;
+            background-color:lightgray;
+            top:15vh;
+        }
+        .c3{
+            position: absolute;
+            height:85vh;
+            width:90%;
+            background-image:url("tip.gif");
+            background-size:cover;
+            top:15vh;
+            left:10%;
+        }
+        
+
+        .c4{
+            width:10%;
+            height:15vh;
+            position:absolute;
+            top:0px;
+            left:0px;
+        }
+        .c5{
+            width:80%;
+            height:15vh;
+            position:absolute;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            left:20%;
+
+        }
+       
+        .x{
+            width:125px;
+            height:30px;
+            border-radius:10px;
+            margin-top: 50px;
+            font-size: large;
+            background-color:lightgreen;
+        }
+       .c6{
+            width: 35%;
+            height: 40vh;
+            position: relative;
+            background:linear-gradient(rgba(225,225,215,0.6),rgba(180,180,205,0.6));
+            left:30%;
+            top:25vh;
+
+        }
+       .c7{
+            position: relative;
+            width:80%;
+            left:15%;
+            top:3vh;
+        }
+        .x2 {
+            display: inline-block;
+            position: relative;
+        }
+    
+        .x2:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color:blueviolet;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .x2:hover:after{
+            position: relative;
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        
+        }
+        .x2:hover{
+             text-decoration: underline solid blueviolet 2px;
+        
+        }
+        .x:hover{
+            background-color: skyblue;
+            color: white;
+        }
+        .d20{
+            color:red
+        }
+        .r10{
+            position:fixed;
+            width:100px;
+            height:15vh;
+            z-index:100;
+            left:90%;
+            top:80vh;
+        }
+        .r11{
+            position:fixed;
+            width:30%;
+            height:30vh;
+            background-color:blueviolet;
+            top:50vh;
+            left:65%;
+            z-index:100;
+            border-radius: 10px;
+            display: none;
+        }
+        .r12{
+            position: relative;
+            height: 20vh;
+            left:10%;
+            top:10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+        }
+        .r13{
+            position: relative;
+            background-color:burlywood;
+        }
+        
+        .t,.z{
+            position: relative;
+            width:200px;
+            height:30px;
+            margin-top: 10px;
+            background: transparent;
+            border-color: black;
+
+        }
+        .p{
+            position: relative;
+            width:250px;
+            height:40px;
+            background-color:green;
+            color: white;
+            margin-top: 10px;
+        }
+        
+        .s{
+        position: relative;
+        left:-9%;
+        color: black;
+       }
+       .d1{
+        position: relative;
+        width:100%;
+        height: 110vh;
+        top:20vh;
+
+       }
+       .d2{
+        position: relative;
+        width:90%;
+        left:3%;
+       }
+   
+     .k5{
+        position: relative;
+        z-index:10;
+        left:40%;
+        top:2vh;
+        font-size: 25px;
+     }
+     .d3{
+        position: relative;
+        
+        width:100%;
+        top:3vh;
+        display:flex;
+        left:0%;
+        margin-top: 5vh;
+        
+     }
+     
+        
+     *, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+body{
+  background: #f9f9f9;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+.content {
+  position: relative;
+  max-width: 300px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+    position: relative;
+  width: 100%;
+  height:40vh;
+}
+
+.content:hover{
+    transform: rotateY(20deg);
+}
+
+
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+.fadeIn-left{
+  left: 20%;
+}
+
+.fadeIn-right{
+  left: 80%;
+}
+    
+ </style>
+</head>
+<body>
+  
+  <div class="c1">
+    <div><a href="1stwebpage.html" target="_blank"><img class="c4" src="logotrain.jpg"></a></div>
+    <div class="c5">
+    <div class="x2" onclick="fun(this)"><a href="bookmeals.html" target="_blank">Book meals</a></div>
+    <div class="x2">Tourism</div>
+    <div class="x2"><a href="railway map.html">Trains Availability& Reservations</a></div>
+    <div class="X2">Station services</div>
+    <div class="x2">Counter Ticket cancellation</div>
+    <div class="x2"><a href="employeelogin1.html" target=blank>Employee login?</a></div>
+    </div>
+
+    
+</div>
+<div class="c2">
+    <i class="k5 fa-solid fa-bars" id="drawer"></i>
+    <div><input class="x" type="button" value="Flights"></div>
+    <div><input class="x" type="button" value="Buses"></div>
+    <div><input class="x" type="button" value="Taxi"></div>
+    <div><input class="x" type="button" value="Hotels"></div>
+    <div><input class="x" type="button" value="Food delivery"></div>
+</div>
+<div class="c3">
+       
+        <div class="r11" ><span class="r12">
+         <span>Hai welcome to IRCTC "Namaste"</span>
+        <span>How may i help you?</span>
+        <span>select the option</span>
+        <span><select class="r13">
+          <option value="TC">ticket booking</option>
+          <option value="FO">food orders</option>
+          <option value="TP">tourist piligrimages</option>
+          <option value="Q">Any other queries</option>
+        </select>
+        </span>
+    </div>
+       <img onclick="fun(this)" class="r10" src="message.png">
+       
+  </div>
+  <div class="d1">
+    <h1 class="d2">Trending packages</h1>
+    <div class="d3">
+            <div class="content">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="set50.jpg" alt="">
+                <div class="content-details fadeIn-bottom fadeIn-left">
+                  <h3>Best water falls in india</h3>
+                  <p>Doodsagar,kunchikal ect are some of the best waterfalls in india</p>
+                </div>
+              </a>
+            </div>
+          <div class="content">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="set51.jpg" alt="">
+              <div class="content-details fadeIn-top fadeIn-right">
+                <h3>Best national parks in india</h3>
+                <p>Gir national park,Kazaranga national park,jimcorbett national park etc are some of the important national parks</p>
+              </div>
+            </a>
+          </div>
+        
+    
+      <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="set52.jpg" alt="">
+          <div class="content-details fadeIn-bottom">
+            <h3 class="content-title">boating in india</h3>
+            <p class="content-text">Nakki lake,Gadisar lake ect are some of the best boating places in india</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="d3">
+    <div class="content">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="set53.jpg" alt="">
+        <div class="content-details fadeIn-top">
+          <h3 class="content-title">Mountains and scenaries</h3>
+          <p class="content-text">panch prayag ect are some of the best tourist places in india</p>
+        </div>
+      </a>
+    </div>
+  <div class="content">
+    <div class="content-overlay"></div>
+    <img class="content-image" src="set54.jpg" alt="">
+    <div class="content-details fadeIn-left">
+      <h3 class="content-title">Best beaches in india</h3>
+      <p class="content-text">Vizag,Goa,Mumbai ect are having some of beautiful beaches to visit</p>
+    </div>
+  </a>
+</div>
+
+<div class="content">
+    <div class="content-overlay"></div>
+    <img class="content-image" src="set55.jpg" alt="">
+    <div class="content-details fadeIn-right">
+      <h3 class="content-title">Tourist places in india</h3>
+      <p class="content-text">Taj mahal,red fort ect are some of the monumental constructions in india</p>
+    </div>
+  </a>
+</div>
+</div>
+</div>    
+<body>  
+<script>
+    let x=0
+        function fun(e){
+            x=x+1
+            let ref=document.getElementsByClassName("r11")[0]
+            if (x%2==1){ ref.style.display="block"    }
+            else{ ref.style.display="none"  }
+        }
+</script>
+</html>

@@ -1,0 +1,45 @@
+
+<html>
+    <head>
+    <style>
+    .w3rcontainer{
+       border: 1px solid #cccfdb;
+       border-radius: 2px;
+    } 
+    .hover-underline-animation {
+      display: inline-block;
+      position: relative;
+      color: #0087ca;
+    }
+    
+    .hover-underline-animation:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #0087ca;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    
+    .hover-underline-animation:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+    </style>
+    </head>
+    <body>
+        <strong>Preview:</strong><br>
+        <div class="hover-underline-animation">Hover w3resource text to see the effect!</div>
+        <div class="hover-underline-animation">Book meals</div>
+        <div class="hover-underline-animation">Tourism</div>
+        <div class="hover-underline-animation"><a href="railway map.html">Trains Availability& Reservations</a></div>
+        <div class="hover-underline-animation">Station services</div>
+        <div class="hover-underline-animation">Counter Ticket cancellation</div>
+        <div class="hover-underline-animation">Employee login?</div>
+
+    </body>
+    </html>

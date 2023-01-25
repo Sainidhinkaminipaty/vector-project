@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: none;
+        }
+        body{
+            width:99%;
+            height:95vh;
+            background-image:url("loginbackground.jpg");
+            background-size: cover ;
+        }
+        .c1{
+            position: absolute;
+            width:40%;
+            height:80vh;
+            background:linear-gradient(rgba(250,250,170,0.3),rgba(230,240,180,0.3));
+            left:30%;
+            top: 10vh;
+            display: flex;
+            flex-direction:column;
+            justify-content: space-around;
+        }
+        .x{
+            position: relative;
+            left:20%;
+            font-size: large;
+            color: blue;
+            
+        }
+        .x1{
+            position: relative;
+            left:20%;
+            font-size: large;
+            
+        }
+        h1{
+            position: relative;
+            left:20%;
+        }
+        .z{
+            height:6vh;
+            position: relative;
+            left:30%;
+            background-color: green;
+            border-radius:50px;
+         }
+         .y{
+            height:4vh;
+            border-radius: 5px;
+            border-color: black;
+         }
+         .c2{
+            position:absolute;
+            left:5%;
+         }
+         .t{
+            position: relative;
+            width:150%;
+            height:5vh;
+         }
+         .k{
+            background-color: white;
+            position: relative;
+            top:-4vh;
+            left:5%;
+         }
+          .s{
+            position: relative;
+            left:-5%;
+
+          }
+          
+        
+
+    </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+     <link rel="stylesheet" href="css/style.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="c2"><input class="t" type="button" value="Back to main menu">
+        <a href="1stwebpage.html"><i class="k fa-solid fa-circle-left"></i></a>
+    </div>
+    <div class="c1">
+        <div class="x1 y"><h1>signup</h1></div>
+     <b><div class="x"><pre>Enter Name:      <input class="y" type="text" placeholder="Enter name"></pre></div>
+        <div class="x"><pre>Enter Surname:   <input class="y" type="password" placeholder="Enter surmane"></pre></div>
+        <div class="x"><pre>Enter DOB:      <input class="y" type="date" placeholder="DOB"></pre></div>
+        <div class="x"><pre>Enter password:  <input class="y" type="password" placeholder="Enter password" id="password"><i class="s bi bi-eye-slash" id="togglePassword"></i></pre></div>
+        <div class="x"><pre>Enter Aadhar:    <input class="y" type="" placeholder="Aadhar details"></pre></div>
+        <div class="x"><pre>Enter Pan:       <input class="y" type="" placeholder="Pan details"></pre></div>
+        <div class="x"><pre>Gender:          <label><input type="radio" id="Gender" name="d">Male <input type="radio" id="Gender" name="d">Female </label></pre> </div>
+        <div class="x"><pre>Address:         <textarea class="y"></textarea></pre></div>
+        <div><a href="1stwebpage.html"><input class="z" type="button" value="CREATE ACCOUNT"></a></div>
+       
+   </b></div>
+</div>
+   <script>
+    const togglePassword = document.querySelector("#togglePassword");
+    const password = document.querySelector("#password");
+
+    togglePassword.addEventListener("click", function () {
+        // toggle the type attribute
+        const type = password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+        
+        // toggle the icon
+        this.classList.toggle("bi-eye");
+    });
+
+    // prevent form submit
+    const form = document.querySelector("form");
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+    });
+</script>
+    
+</body>
+</html>

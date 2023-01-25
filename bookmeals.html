@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   <style>
+      *{
+                margin:0px;
+                padding:0px;
+        }
+          a{
+            text-decoration: none;
+           } 
+        .c1{
+            position:absolute;
+            height:15vh;
+            width:100%;
+            background-color: skyblue;
+            
+        }
+        
+        .c3{
+            position:absolute;
+            height:85vh;
+            width:100%;
+            top:45vh;
+            background-color: blue;
+        }
+        .c4{
+            width:10%;
+            height:15vh;
+            position:absolute;
+            top:0px;
+            left:0px;
+            z-index: 5;
+        }
+        .c5{
+            width:80%;
+            height:15vh;
+            position:absolute;
+            left:20%;
+
+        }
+       
+        .x{
+            width:125px;
+            height:30px;
+            border-radius:10px;
+            margin-top: 50px;
+            font-size: large;
+            background-color:lightgreen;
+        }
+        .t11{
+          width:100%;
+          height:15vh;
+          position: relative;
+        }
+        .k1{
+          width:10%;
+          height:15vh;
+          left:90%;
+          position: relative;
+          animation: train 5s infinite;
+        }
+        .rt{
+         position: absolute;
+         right:10px;
+         top:50%;
+         color:red;
+          }
+       .con{
+         position: relative;
+         max-width:100%;
+         height:85vh;
+        overflow: hidden;
+         }
+       .lt{
+        position: relative;
+        top:50%;
+        left:10px;
+        color:red;
+        z-index: 5;
+        }
+        .dotcon{
+         position: absolute;
+         width:100%;
+         bottom: 10px;
+         justify-content: center;
+         display: flex;
+       }
+       .dotcon div{
+        padding: 3px;
+       }
+       .fa-solid{
+       color:coral;
+       }
+       .fa-regular{
+      color:darkgoldenrod;
+      }
+       .k2{
+      position: absolute;
+      width:100%;
+      height:85vh;
+      top:0px;
+      left:0px;
+
+       }
+       .c50{
+        position:absolute;
+        width:100%;
+        height:10vh;
+        color:red;
+        top:80px;
+       }
+       .d1{
+        position: relative;
+        width:100%;
+        height:110vh;
+        top:130vh;
+       }
+       .d2{
+        position: relative;
+        width:80%;
+         top:4vh;
+         left:20%;
+         
+       }
+       .d3{
+        position: relative;
+        top:5vh;
+        left:0%;
+        width: 100%;
+       }
+       .d4{
+        position: relative;
+        left:51%;
+        top:-6vh;
+
+       }
+       .d6{
+        position: relative;
+        width:100%;
+        height:30vh;
+        top:10vh;
+        display:flex;
+        justify-content: space-around;
+
+       }
+       .d5{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+       }
+       .gap{
+        height:10vh;
+       }
+       .d7{
+        position: relative;
+        left:10%;
+        width:90%;
+      
+       }
+       .d15{
+        position:absolute;
+        width:100%;
+        height:30vh;
+        top:15vh;
+
+       }
+       .d16{
+        position:absolute;
+        width:100%;
+        height:30vh;
+        
+
+       }
+       .d17{
+        position: relative;
+        z-index:4;
+        width:35%;
+        height:10vh;
+        text-align:center;
+        left:33%;
+        top:17vh;
+       }
+       .d18{
+        position:relative;
+        z-index:5;
+        width:10%;
+        height:5vh;
+        left:22%;
+        top:17vh;
+        color:black;
+        background-color: orange;
+       }
+       .t20{
+        position: relative;
+        z-index:6;
+        font-size: 35px;
+        left:-10%;
+        top:18vh;
+        color: orange;
+
+
+       }
+       .d8{
+        position:absolute;
+        width:95%;
+        height:35vh;
+        left:5%;
+        top:235vh;
+        
+        
+
+       }
+       .d21{
+        position: relative;
+        display: flex;
+        justify-content:space-around ;
+       }
+       .e1{
+        position:absolute;
+        height:30px;
+        width:95%;
+        top:275vh;
+        left:5%;
+        
+       }
+       .e2{
+        position: relative;
+        height:90vh;
+        width:95%;
+        top:220vh;
+        left:5%;
+        
+       }
+       .e3{
+        position: relative;
+        width:95%;
+        top:3vh;
+        text-align: justify;
+        display: flex;
+        justify-content: space-around;
+
+
+       }
+       .e4{
+        position: relative;
+        width:100%;
+
+       }
+       .e5{
+        position: relative;
+        width:100%;
+        left:10%;
+       }
+       .e6{
+        position: relative;
+        width:95%;
+        left:5%;
+        height:30vh;
+        top:210vh;
+
+       }
+       .e7{
+        position: relative;
+        width:99%;
+        height:50vh;
+        top:220vh;
+
+       }
+       .c16{
+            position: relative;
+            width:100%;
+            height:50vh;
+            background-color: black;
+            top:240vh;
+            color: white;
+        }
+       .c17{
+        position: relative;
+        width:100%;
+        height:5vh;
+        background-color: chocolate;
+        }
+        .c18{
+            position: relative;
+            width:70%;
+            left:20%;
+            top:-1vh;
+            left:5%;
+            
+        }
+        .c19{
+            position: relative;
+            width:30%;
+            left:60%;
+            display: flex;
+            justify-content: space-around;
+            top:-6vh;
+            font-size: 22px;
+        }
+       .y3{
+        position: relative;
+        color:red ;
+
+       }
+       .y2{
+        position: relative;
+        color:green ;
+
+       }
+       .y1{
+        position: relative;
+        color:purple ;
+
+       }
+       .l{
+        position: relative;
+        color:skyblue;
+
+       }
+       .c20{
+        position: relative;
+        width:30%;
+        height:30vh;
+        top:2vh;
+        left:4%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+       }
+       .c21{
+        position: relative;
+        width:95%;
+        height: 30vh;
+        display: flex;
+       }
+        .c22{
+            position: relative;
+            width:100%;
+            height:10vh;
+            background-color: white;
+            top:5vh;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .c23{
+            position: relative;
+            top:5vh;
+            width:80%;
+            height:84px;
+        }
+        .c24{
+            position: relative;
+            color: black;
+            top:2vh;
+           
+
+        }
+        .x2 {
+            display: inline-block;
+            position: relative;
+        }
+    
+        .x2:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color:blueviolet;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .x2:hover:after{
+            position: relative;
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        
+        }
+        .x2:hover{
+             text-decoration: underline solid blueviolet 2px;
+        
+        }
+        .x:hover{
+            background-color: skyblue;
+            color: white;
+        }
+        .d20{
+            color:red
+        }
+        .r10{
+            position:fixed;
+            width:100px;
+            height:15vh;
+            z-index:100;
+            left:90%;
+            top:80vh;
+        }
+        .r11{
+            position:fixed;
+            width:30%;
+            height:30vh;
+            background-color:blueviolet;
+            top:50vh;
+            left:65%;
+            z-index:100;
+            border-radius: 10px;
+            display: none;
+        }
+        .r12{
+            position: relative;
+            height: 20vh;
+            left:10%;
+            top:10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+        }
+        .r13{
+            position: relative;
+            background-color:burlywood;
+        }
+        .z3{
+            position: relative;
+            
+        }
+        .t25{
+            position: relative;
+            height: 100vh;
+            width:100%;
+            top:35vh;
+            border:none;
+
+        }
+        i{
+            transition: width 1s, height 1s, transform 1s;
+           }
+
+        i:hover {
+            transform: rotate(180deg);
+           }
+        
+           .t26{
+            position: relative;
+            height:5vh;
+            width:100%;
+            top:31vh;
+            text-align: center;
+            }
+            .r:hover{
+                position: relative;
+                color:lightgreen;
+                
+            }
+          
+      
+
+        
+        @keyframes train {
+          
+          90%{
+            top:0px;
+            left:-30%;
+          }
+          100%{
+            top:0px;
+            left:-40%;
+          }
+          
+          
+        }
+       
+
+   </style>
+</head>
+<body>
+
+  <div class="c1">
+    <div><hr class="c50"></div>
+    <div><img class="c4" src="giphy.gif"></div>
+    <div class="c5">
+     <div class="k1"><img class="t11" src="animation effects train.gif"></div>
+</div>
+<div class="d15">
+  <img class="d16" src="fooder.png">
+  <input class="d17" type="text" placeholder="Enter PNR to order">
+  <input class="d18" type="button" value="submit">
+  <i class="t20 fa-solid fa-train"></i>
+</div>
+</div>
+<div class="c3">
+  
+  <div class="con">
+    <div class="lt" onclick="fun1()"><i class="fa-solid fa-less-than"></i></div>
+     <img id="i1" class="k2" src=""/>
+    <div class="rt" onclick="fun()"><i class="fa-solid fa-greater-than"></i></div>
+  <div class="dotcon">
+    <div onclick="fun2(0,this)"><i class="fa-solid fa-circle"></i></div>
+    <div onclick="fun2(1,this)"><i class="fa-regular fa-circle"></i></div>
+    <div onclick="fun2(2,this)"><i class="fa-regular fa-circle"></i></div>
+    <div onclick="fun2(3,this)"><i class="fa-regular fa-circle"></i></div>
+    <div onclick="fun2(4,this)"><i class="fa-regular fa-circle"></i></div>
+  </div>  
+  </div>   
+  
+     
+       <script>
+       var i=0
+       var arr=["set11.jpg","set12.jpg","set13.webp","set30.jpg","set31.jpg"]
+    function fun(){
+      let re=document.getElementsByClassName("fa-circle")
+      re[i].className="fa-regular fa-circle"
+     i++
+      
+        if(i>=arr.length){
+          i=0
+        }
+       
+        console.log(i)
+        document.getElementById("i1").src=arr[i]
+        re[i].className="fa-solid fa-circle"
+  
+      }
+      function fun1()
+      {
+        let re=document.getElementsByClassName("fa-circle")
+      re[i].className="fa-regular fa-circle"
+  i--;
+  if(i==-1)
+  {
+    i=arr.length-1
+  }
+  console.log(i)
+  document.getElementById("i1").src=arr[i]
+  re[i].className="fa-solid fa-circle"
+      }
+  
+     
+   function fun2(ind,e)
+   {
+    let re=document.getElementsByClassName("fa-solid fa-circle")
+    if(re.length>0)
+    {
+      re[0].className="fa-regular fa-circle"
+    }
+  e.firstChild.className="fa-solid fa-circle"
+    document.getElementById("i1").src=arr[ind]
+    i=ind
+   } 
+  
+  
+   function fun3(){
+    let re= document.getElementsByClassName("fa-circle")
+    re[i].className="fa-regular fa-circle"
+    
+    i++
+     
+       if(i>=arr.length){
+         i=0
+       }
+      
+       console.log(i)
+       document.getElementById("i1").src=arr[i]
+       re[i].className="fa-solid fa-circle"
+  
+     }
+     
+  
+    setInterval(fun3,3000)
+       
+      </script>
+
+</div>
+<div class="d1">
+  <div><h1 class="d2">Grab your orders in the next station</h1></div>
+  <div class="d3"><h2 class="d7">Enter your PNR no. or station code: </h2><input class="d4" type="text" value=""></div>
+  <div class="d5">
+    <div class="d6">
+      <img src="set21.png">
+      <img src="set22.png">
+      <img src="set23.png">
+      <img src="set24.png">
+    </div>
+    <div class="gap"></div>
+    <div class="d6">
+      <img src="set25.png">
+      <img src="set26.png">
+      <img src="set27.png">
+      <img src="set28.png">
+    </div>
+  </div>
+</div>
+<div class="d8">
+ <h2>% Great Offers</h2>
+ <div class="d21">
+ <div><img src="setb12.png"></div>
+ <div><img src="setb13.png"></div>
+ <div><img src="setb14.png"></div>
+</div>
+</div>
+<div class="e1">
+  <h2>Eat what makes you happy</h2>
+  <div><a href="bookmeals.html"><img src="setb15.png"></a></div>
+
+</div>
+<div class="e2">
+<h2>Benefits</h2>
+<div class="e3">
+<div class="e4">RailRecipe: Your Partner For Train Journey Planning
+  RailRecipe has come to enhance the train experience of Indian Railway passengers.
+  
+  Hello, foodies. Are you on board a train or have a ticket for the next day's train? Are you wondering about what you'll eat on the train journey? Don't worry; Rail Recipe is an E-catering platform that will take your train journey to the next level by providing great meals. RailRecipe is like a buddy for train travellers as it can make your train journey feel like your home by providing delicious food at the right time. The food and service at RailRecipes are like that of a family man who cooks and serves you. The food service of RailRecipe creates an enjoyable experience for train passengers by providing Indian food.
+  
+  Railrecipe is not an ordinary E-catering service platform; it's a well-mannered or, can say, organized E-catering service on the train. It is excellent food, tea, coffee, and snack delivery platform. No passengers have to worry about food quality because RailRecipe is here to deliver high-quality food. You will find unlimited food options on the RailRecipe food menu. RailRecipe delivers healthy food to the passenger's preferred station</div>  
+<div><img class="e5" src="setb16.webp"></div>
+</div>
+</div>
+<div class="e6">
+  <img src="setb17.png">
+</div>
+<div>
+ <img class="e7" src="setb18.png">
+</div>
+<div class="c16">
+  <div class="c17">
+   <div><h2 class="c18 r">Get connected with us on our social network</h2></div>
+   <div class="c19">
+      <i class="y1 fa-brands fa-facebook"></i>
+      <i class="y1 fa-brands fa-square-instagram"></i>
+      <i class="y2 fa-brands fa-square-whatsapp"></i>
+      <i class="y3 fa-brands fa-youtube"></i>
+      <i class="l fa-brands fa-twitter"></i>
+      <i class="l fa-brands fa-telegram"></i>
+  </div>
+  <div class="c21">
+  <div class="c20">
+      <div class="r">IRCTC Trains</div>
+      <div class="r">General Information</div>
+      <div class="r">Important Information</div>
+      <div class="r">Agents</div>
+      <div class="r">Enquires</div>
+  </div>
+  <div class="c20">
+      <div class="r">How To</div>
+      <div class="r">IRCTC official app</div>
+      <div class="r">Advertise with us</div>
+      <div class="r">Refund Rules</div>
+      <div class="r">Person with disability facilities</div>
+  </div>
+  <div class="c20">
+      <div class="r">IRCTC eWallet</div>
+      <div class="r">IRCTC loyalty program</div>
+      <div class="r">IRCTC payment gateway</div>
+      <div class="r">IRCTC zone</div>
+      
+  </div>
+  <div class="c20">
+      <div class="r">For Newly Migrated Agents</div>
+      <div class="r">Mobile Zone</div>
+      <div class="r">Policies</div>
+      <div class="r">Ask Diksha bot</div>
+      <div class="r">About us</div>
+  </div>
+  </div>
+  <div class="c22">
+     <div><img class="c23" src="Screenshot 2023-01-12 184555.png"></div>
+     <div><pre class="c24">Copyright Â© 2023 - www.irctc.co.in. All Rights Reserved 
+                               
+                      Designed and Hosted by CRIS
+          
+                              Compatible Browsers</pre></div>
+  </div>
+</div>
+  
+
+</div>
+
+
+
+</body>
+</html>
